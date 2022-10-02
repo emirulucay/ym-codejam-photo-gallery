@@ -20,16 +20,6 @@ export default function MainTitle() {
       {/* kısa ve basit bir açıklama içeren text ve projenin bana ait olduğunu söyleyen ve siteme yönlendiren bir link */}
       <div className="flex flex-col mt-8">
         <h4 className="text-gray-200 font-medium text-2xl text-center">Simple and creative photo gallery</h4>
-        <h5 className="text-gray-400 text-lg text-center">
-          created by{" "}
-          <a
-            className="text-white hover:border-b-[1.5px] border-white leading-[1.2]"
-            href="https://emirulucay.com"
-            target="_blank"
-            rel="noopener noreferrer">
-            emir
-          </a>
-        </h5>
       </div>
     </div>
   );
