@@ -10,6 +10,8 @@ module.exports = {
       },
       animation: {
         explore: "explore 12s linear infinite",
+        aquaText: "aquaText 12s linear infinite",
+        orangeText: "orangeText 12s linear infinite",
       },
       // burada explore butonunun animasyonu yer alıyor.
       keyframes: {
@@ -33,6 +35,37 @@ module.exports = {
           "100%": {
             color: "#fff",
             background: "#27B391",
+          },
+        },
+        aquaText: {
+          "0%": {
+            filter: "drop-shadow(0 0 16px rgba(41, 200, 211, .3))",
+          },
+          "50%": {
+            filter: "drop-shadow(0 0 8px rgba(41, 200, 211, .3))",
+          },
+          "60%": {
+            filter: "drop-shadow(0 0 0px rgba(41, 200, 211, .3))",
+          },
+          "100%": {
+            filter: "drop-shadow(0 0 16px rgba(41, 200, 211, .3))",
+          },
+        },
+        orangeText: {
+          "0%": {
+            filter: "drop-shadow(0 0 0px rgba(223, 151, 42, .4))",
+          },
+          "40%": {
+            filter: "drop-shadow(0 0 8px rgba(223, 151, 42, .4))",
+          },
+          "50%": {
+            filter: "drop-shadow(0 0 16px rgba(223, 151, 42 .4))",
+          },
+          "90%": {
+            filter: "drop-shadow(0 0 16px rgba(223, 151, 42 .4))",
+          },
+          "100%": {
+            filter: "drop-shadow(0 0 0px rgba(223, 151, 42 .4))",
           },
         },
       },

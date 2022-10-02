@@ -7,12 +7,12 @@ export default function MainTitle() {
       onları global.css dosyasında yazdım  */}
       <h1 className="flex flex-col items-center justify-center">
         <span className="relative">
-          <span className=" text-white text-5xl lg:text-9xl font-extrabold tracking-tight text-center greenText transition-all duration-200">
+          <span className=" text-white text-5xl lg:text-9xl font-extrabold tracking-tight text-center animate-aquaText greenText transition-all duration-200">
             Awesome
           </span>
         </span>
         <span className="relative">
-          <span className=" text-white text-5xl lg:text-9xl font-extrabold tracking-tight text-center orangeText transition-all duration-200">
+          <span className=" text-white text-5xl lg:text-9xl font-extrabold tracking-tight text-center animate-orangeText orangeText transition-all duration-200">
             Photo Gallery
           </span>
         </span>
