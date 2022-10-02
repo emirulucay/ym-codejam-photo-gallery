@@ -6,7 +6,7 @@ export default function App() {
   const ref = useRef(null);
 
   const explore = () => {
-    ref.current.ScrollIntoView();
+    ref.current.scrollIntoView();
     console.log("asdasd");
   };
 
