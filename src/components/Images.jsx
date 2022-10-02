@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Images() {
   return (
-    <div className="container flex flex-wrap justify-center items-start mt-52 gap-2 select-none py-12">
+    <div className="container flex flex-wrap justify-center items-start mt-20 gap-2 select-none py-12">
       {/* üçlü bölme */}
       <div className="w-full flex gap-2 justify-center">
         <img src="image-11.png" alt="space" width="28%" className="rounded-md object-fit pointer-events-none select-none" />

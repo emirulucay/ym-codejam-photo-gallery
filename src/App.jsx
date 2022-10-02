@@ -14,8 +14,10 @@ export default function App() {
       {/* hero title */}
       <HeroTitle />
       {/* explore button */}
-      <div onClick={() => explore()} className="flex items-center justify-center">
-        <a className="text-white text-lg lg:text-xl font-medium px-6 py-4 lg:px-10 lg:py-4 animate-explore transition-all duration-500 cursor-pointer rounded-lg">
+      <div className="flex items-center justify-center">
+        <a
+          onClick={() => explore()}
+          className="text-white text-lg lg:text-xl font-medium px-6 py-4 lg:px-10 lg:py-4 animate-explore transition-all duration-500 cursor-pointer rounded-lg">
           Explore
         </a>
       </div>
