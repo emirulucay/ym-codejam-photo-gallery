@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* genel css */
+  @import url(https://fonts.googleapis.com/css?family=Inter:300,regular,500,600,700,800,900);
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  body {
+    background: #080808;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities {
+
+  /* renklerin değişmesi için before verip animasyon ile kontrol sağlıyorum */
+  .greenText {
+    text-align: center;
+    @apply bg-gradient-to-r from-aqua1 to-aqua2;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    @apply transition-all duration-500;
+  }
+
+  .orangeText {
+    text-align: center;
+    @apply bg-gradient-to-r from-orange1 to-orange2;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    @apply transition-all duration-200;
+
+  }
 }
